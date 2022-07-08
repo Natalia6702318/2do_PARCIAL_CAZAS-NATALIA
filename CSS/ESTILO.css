@@ -1,0 +1,123 @@
+/*
+    *Modificar este archivo para agregar los estilos requeridos
+    *Realizar la importacion correspondiente
+    *Crear las clases necesarias para cada elemento
+    *Crear los ID para los elementos creados
+    *Agregar efectos mediante HOVER
+    *
+*/
+
+body {
+    background-image: url("/IMG/fondo_6.webp");
+    background-repeat: no-repeat;
+    width: 80%;
+    background-size: cover;
+    font-family: Helvetica;
+}
+
+.perfil {
+    color: rgb(0, 0, 0);
+    border: 3px solid #503459;
+    border-radius: 10px 10px 10px 10px ;
+    float: left;
+    width: 100%;
+    font-size: large;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #e3b1c8;
+    justify-content: center;
+    font-size: large;
+    padding: 30px;
+}
+
+/*.perfil{
+    text-align: center;
+    line-height: 1.8;
+}
+div.perfil{
+    border: 2px solid rgb(55, 55, 55);
+}*/
+
+.foto{
+    /*width: 30%;
+    display: block;
+    margin: 0px auto;padding: 30px;*/
+
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    overflow: hidden;
+    position: fixed;
+    font-family: Helvetica;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #D1ACA4;
+    padding: 10px;
+    font-size: x-large;
+    z-index: 3;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu a{
+    font-family: helvetica;
+    font-size:  large;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #9BFBE1;
+    font-weight: bold;
+    align-content: center;
+    transition-duration: 0.5s;
+}
+
+.menu a:hover{
+    background: #dfcae1;
+    color: black;
+    border: 6px solid #572364;
+    font-weight: 800;
+    font-size: large;
+}
+
+.c1{
+    background-color: #36979E;
+    color: white;
+    width: 23%;
+    text-align: center;
+    float: left;
+    
+}
+
+.c2{
+    background-color: #EB7FC0;
+    color: white;
+    width: 23%;
+    text-align: center;
+    float: left;
+}
+
+.c3{
+    background-color: #66E1EA;
+    color: white;
+    width: 23%;
+    text-align: center;
+    float: left;
+}
+.c4{
+    background-color: #EBD650;
+    color: white;
+    width: 23%;
+    text-align: center;
+    float: left;
+}
+
+.imagen {
+    vertical-align: middle;
+    text-align: center;
+}

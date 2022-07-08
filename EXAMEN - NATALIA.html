@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2do Examen - CAZAS TRUJILLO NATALIA </title>
+    <link rel="stylesheet" href="CSS/ESTILO.css">
+    <script src="JS/CODIGO.js"></script>
+</head>
+<body>
+
+    <div class="indicaciones" >
+        <p1>SEGUNDO EXAMEN</p1>
+        <p2>PROGRAMACI&Oacute;N WEB</p2>
+    </div>
+    <div class="autorG">
+        <h1>Indicaciones</h1>
+        <p>* Agregue un <code>div</code>, en el cual debe colocar sus datos personales como autor <br>
+            Nombre y Apellidos<br>
+            descripci&oacute;n personal <br>
+            *Importe la hoja de estilo <code>ESTILO.CSS</code> <br>
+            * 
+            * Agregue un fondo de imagen, usando alguna de las imagenes adjuntas <br>
+            <img src="" alt="">
+            * Agregue un bot&oacute;n que env&iacute;e a facebook, usando el icono correspondiente <br>
+            * Agregue un bot&oacute;n que env&iacute;e a instagram, usando el icono * correspondiente  <br>
+            * Agregue un bot&oacute;n que env&iacute;e a youtube,usando el icono correspondiente  <br>
+            * Utilice las fuentes HELVETICA, TREBUCHET MS, ARIAL <br>
+            * Agregue un MENU que permita navegar por la p&aacute;gina, como se vio en clase, el cual contenga:<br>
+            * Para el menu importe un archivo de FONTAWESOME
+            * Crear un elemento de fondo que use algun tipo de filtro de imagen
+            * Agregar una transición a los elementos de contenido con una duración de 1s  
+            <ol>
+                <li>Inicio</li>
+                <li>Perfil</li>
+                <li>Ayuda</li>
+                <li>Contenido</li>  
+                <li>JS</li>              
+            </ol>
+            * Crear 3 cajas para mostrar los siguientes elementos: <br>
+            * Asegurarse que las im&aacute;genes esten alineadas verticalmente <br>
+            <ul>
+                <li>
+                    <img src="IMG/imagen.jpeg" alt="" width="50px">
+                    Im&aacute;genes
+                </li>
+                <li>
+                    <img src="IMG/documento.jpeg" alt="" width="50px">
+                    Documentos</li>
+                <li>
+                    <img src="IMG/video.jpeg" alt="" width="50px">
+                </li>
+            </ul>
+            Agregue estilos para estas cajas <br>
+            Utilice los siguientes colores: <br>
+            <div class="c1">#36979E</div>
+            <div class="c2">#EB7FC0</div>
+            <div class="c3">#66E1EA</div>
+            <div class="c4">#EBD650</div>            
+        </p>
+    </div>
+
+    <!-- ACA COMIENZA MI CODIGO -->
+
+    <div class="menu"> 
+        <a href="#in" class="c1"> INICIO 
+            <img src="IMG/inicio.jpeg" alt="" width="7%">
+        </a>
+        
+        <a href="#per" class="c2"> PERFIL 
+            <img src="IMG/perfil.jpeg" alt="" width="7%">
+        </a>
+        
+        <a href="#ay" class="c3"> AYUDA 
+            <img src="IMG/ayuda.jpeg" alt="" width="7%">
+        </a> 
+        
+        <a href="#con" class="c4"> CONTENIDO
+            <img src="IMG/contenido.jpeg" alt="" width="7%">
+        </a>
+    </div>
+
+    <div class="perfil">
+        <h1>
+            Natalia Cazas Trujillo
+        </h1>
+
+        <h2> Estudiante </h2> 
+        
+        <div class="foto">
+            <a href="https://www.facebook.com">
+                <img src="img/facebook.png" alt="" width="30%">
+            </a> 
+
+            <a href="https://www.youtube.com">
+                <img src="img/youtube.png" alt="" width="30%">
+            </a> 
+
+            <a href="https://www.instagram.com">
+                <img src="img/instagram.png" alt="" width="30%">
+            </a>        
+        </div>
+    </div>
+
+        <div class="imagen">  
+        <div>
+            <img src="IMG/imagen.jpeg" alt="" width="90px">
+        </div>
+        <div>
+            <img src="IMG/documento.jpeg" alt="" width="90px">
+        </div>
+         
+        <div>
+            <img src="IMG/video.jpeg" alt="" width="90px">
+        </div>
+    </div>
+
+    <div class="ejJS">
+        <ol>
+            <li>Realizar un ejercicio que permita agregar un elemento a un vector</li>
+            <li>Realizar un ejercicio que permita eliminar los elementos del vector</li>
+            <li>Realizar un elemento que permita crear una lista numeros y posteriormente ordenarlos</li>
+            <li>Realizar un elemento que permita crear una lista de nombres posteriormente ordenarlos alfabeticamente</li>
+            <li>Realizar un ejercicio que permita crear una lista de mascotas por pares de datos [nombre, edad]<li>
+            <li>Realizar un ejercicio que permita ordenar el anterior vector por la edad</li>
+            <li>Realizar un ejercicio que permita ordenar el anterior vector por el nombre</li>
+        </ol>
+    </div>
+
+    <div class="ej1" id="e">
+        <h1>Ejercicio 1 - Crear lista</h1>
+        <input type="text" id="ent1">
+        <button onclick="add()">AGREGAR</button>
+        <p id="res1"></p>
+    </div>
+    <div class="ej1">
+        <h1>Ejercicio 2 - Eliminar elementos</h1>
+        <button id="mostrar" onclick="most()">MOSTRAR</button>
+        <button id="ej2" onclick="elim()">ELIMINAR</button>
+        <p id="res2"></p> 
+    </div>
+    <div class="ej1">
+        <h1>Ejercicio 3 - Ordenar numeros</h1>
+        <input type="text" id="ent2">
+        <button onclick="add2()">AGREGAR</button>
+        <button onclick="ord()">Ordenar N&uacute;meros</button>
+        <p id="res3"></p>
+    </div>
+    <div class="ej1">
+        <h1>Ejercicio 4 - Ordenar nombres</h1>
+        <input type="text" id="ent3">
+        <button onclick="add3()">AGREGAR</button>
+        <button onclick="ord2()">Ordenar Alfabeticamente</button>
+        <p id="res4"></p>
+    </div>
+
+    <div class="ej1" id>
+        <h1>Ejercicio 5 - Crear lista de mascotas</h1>
+        <input type="text" id="en5">
+        <button onclick="ag()">AGREGAR</button>
+        <p id="re5"></p>
+    </div>
+    <div class="ej1">
+        <h1>Ejercicio 6 - Ordenar por edad</h1>
+        <input type="text" id="ent22">
+        <button onclick="ag1()">AGREGAR</button>
+        <button onclick="orde()">Ordenar</button>
+        <p id="res33"></p>
+    </div>
+    <div class="ej1">
+        <h1>Ejercicio 7 - Ordenar por el nombre</h1>
+        <input type="text" id="ent33">
+        <button onclick="ag2()">AGREGAR</button>
+        <button onclick="orde1()">Ordenar Alfabeticamente</button>
+        <p id="res44"></p>
+    </div>
+    
+</body>
+</html>
